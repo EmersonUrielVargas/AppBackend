@@ -1,9 +1,8 @@
-package Mision_TIC_Semana_4_Back_End.Mision_TIC_Semana_4_Back_End.api;
+package Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.api;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import Mision_TIC_Semana_4_Back_End.Mision_TIC_Semana_4_Back_End.dao.UsersDAO;
-import Mision_TIC_Semana_4_Back_End.Mision_TIC_Semana_4_Back_End.models.Users;
+import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.dao.UsersDAO;
+import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.models.Users;
 
 @RestController // esta es una clase REST
 @RequestMapping("users")
@@ -39,7 +38,7 @@ public class UsersAPI {
 
 	@GetMapping("/showUser/{id}")
 	public Users getById(@PathVariable("id") Long id) {
-		//Users user = usersDAO.getById(id);
+		// Users user = usersDAO.getById(id);
 		Users user = usersDAO.userById(id);
 		return user;
 	}

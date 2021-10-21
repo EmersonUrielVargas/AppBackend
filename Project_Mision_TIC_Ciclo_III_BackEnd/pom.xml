@@ -12,7 +12,7 @@
 	<artifactId>Project_Mision_TIC_Ciclo_III_BackEnd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Project_Mision_TIC_Ciclo_III_BackEnd</name>
-	<description>BackEnd - Project Semana 4</description>
+	<description>Proyecto Mision TIC Ciclo III</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

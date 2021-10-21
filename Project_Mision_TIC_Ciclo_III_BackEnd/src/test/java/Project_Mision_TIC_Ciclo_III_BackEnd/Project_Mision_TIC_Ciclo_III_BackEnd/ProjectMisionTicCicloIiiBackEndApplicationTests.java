@@ -1,10 +1,10 @@
-package Mision_TIC_Semana_4_Back_End.Mision_TIC_Semana_4_Back_End;
+package Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MisionTicSemana4BackEndApplicationTests {
+class ProjectMisionTicCicloIiiBackEndApplicationTests {
 
 	@Test
 	void contextLoads() {
