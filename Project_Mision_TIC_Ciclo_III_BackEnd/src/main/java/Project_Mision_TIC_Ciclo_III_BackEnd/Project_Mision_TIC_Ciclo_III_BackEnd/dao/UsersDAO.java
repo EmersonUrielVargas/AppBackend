@@ -7,7 +7,7 @@ import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd
 
 public interface UsersDAO extends JpaRepository<Users, Long> {
 
-	@Query(nativeQuery = true, value = "SELECT* FROM users WHERE user_id = ?1")
-	Users userById(Long id);
+	@Query(nativeQuery = true, value = "SELECT* FROM users WHERE user_id = 0000")
+	Users checkAdmin();
 
 }

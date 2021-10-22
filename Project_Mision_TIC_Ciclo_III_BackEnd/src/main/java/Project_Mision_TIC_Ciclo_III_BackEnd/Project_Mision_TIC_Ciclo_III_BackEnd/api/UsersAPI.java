@@ -18,6 +18,7 @@ import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd
 @RestController // esta es una clase REST
 @RequestMapping("users")
 public class UsersAPI {
+
 	@Autowired // inyecta la dependencia de todos los métodos del JPA para usuarioDAO
 	private UsersDAO usersDAO;
 
@@ -38,8 +39,13 @@ public class UsersAPI {
 
 	@GetMapping("/showUser/{id}")
 	public Users getById(@PathVariable("id") Long id) {
-		// Users user = usersDAO.getById(id);
-		Users user = usersDAO.userById(id);
+		Users user = usersDAO.getById(id);
+		return user;
+	}
+
+	@GetMapping("/checkAdmin")
+	public Users getAdmin() {
+		Users user = usersDAO.checkAdmin();
 		return user;
 	}
 
