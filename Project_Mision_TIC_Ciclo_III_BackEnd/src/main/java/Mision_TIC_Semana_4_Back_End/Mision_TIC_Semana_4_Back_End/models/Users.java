@@ -1,7 +1,11 @@
 package Mision_TIC_Semana_4_Back_End.Mision_TIC_Semana_4_Back_End.models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -15,6 +19,11 @@ public class Users {
 	private String user_email;
 	private String user;
 	private String password;
+	
+	/*@OneToMany
+	@JoinColumn(name = "user_id")
+	private List<Sales> sales;*/
+	
 	public Users() {}
 	public long getUser_id() {
 		return user_id;
