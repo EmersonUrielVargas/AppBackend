@@ -1,5 +1,9 @@
 package Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.dao;
 
-public class VendorsDAO {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.models.Vendors;
+
+public interface VendorsDAO extends JpaRepository<Vendors, Long> {
 
 }
