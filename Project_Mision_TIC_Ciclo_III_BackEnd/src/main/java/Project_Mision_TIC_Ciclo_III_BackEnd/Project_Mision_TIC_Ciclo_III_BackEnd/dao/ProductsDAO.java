@@ -1,0 +1,10 @@
+package Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.models.Clients;
+import Project_Mision_TIC_Ciclo_III_BackEnd.Project_Mision_TIC_Ciclo_III_BackEnd.models.Products;
+
+public interface ProductsDAO extends JpaRepository<Products, Long>{
+
+}
