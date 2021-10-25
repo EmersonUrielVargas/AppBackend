@@ -59,6 +59,12 @@ public class Products {
 	public void setPrice_sale(double price_sale) {
 		this.price_sale = price_sale;
 	}
+	public Vendors getVendor_nit() {
+		return vendor_nit;
+	}
+	public void setVendor_nit(Vendors vendor_nit) {
+		this.vendor_nit = vendor_nit;
+	}
 	
 	
 	
